@@ -1,0 +1,31 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+:root {
+	--fn-color: #0c090a;
+	--bg-color: #d3d3d3;
+	--ff1: 'Poppins', sans-serif;
+	--ff2: serif;
+}
+
+body {
+	background-color: var(--bg-color);
+	color: var(--fn-color);
+	font-family: var(--ff1);
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+ul {
+	list-style: none;
+}
