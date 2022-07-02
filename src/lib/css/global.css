@@ -10,15 +10,21 @@ html {
 
 :root {
 	--fn-color: #0c090a;
+	--fn-white-color: #fff;
 	--bg-color: #d3d3d3;
 	--ff1: 'Poppins', sans-serif;
 	--ff2: serif;
+	--adobe-font: adobe-garamond-pro, serif;
 }
 
 body {
 	background-color: var(--bg-color);
 	color: var(--fn-color);
-	font-family: var(--ff1);
+	/* font-family: var(--ff1); */
+	font-family: var(--adobe-font);
+	font-weight: 400;
+	font-style: normal;
+	overflow-x: hidden;
 }
 
 a {
