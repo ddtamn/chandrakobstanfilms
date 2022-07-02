@@ -16,19 +16,16 @@
 <section>
         <div class="inner">
              <h1 class="title">featured works</h1>
-       <div class="works">
-            {#each source as source}
-                
-            <div class="work">
-                <a class="image" href="/"><img src="{source.link}" alt=""></a>
-                <div class="description">Moyo & Wiwid | Prewedding</div>
+            <div class="works">
+                {#each source as source}
+                <div class="work">
+                    <a class="image" href="/"><img src="{source.link}" alt=""></a>
+                    <div class="description">Moyo & Wiwid | Prewedding</div>
+                </div>
+                {/each}
             </div>
-            {/each}
-           
-        </div>
        </div>
-    </section>
-
+ </section>
 
     <style>
         section {
