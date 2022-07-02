@@ -1,8 +1,8 @@
 <script>
-    let image1 = "src/lib/images/img001.jpg"
-    let image2 = "src/lib/images/img002.jpg"
-    let image3  = "src/lib/images/img003.jpg"
-    let image4  = "src/lib/images/img004.jpg"
+    let image1 = "/images/img001.jpg"
+    let image2 = "/images/img002.jpg"
+    let image3  = "/images/img003.jpg"
+    let image4  = "/images/img004.jpg"
 </script>
 
 <section>
