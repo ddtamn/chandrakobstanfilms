@@ -1,38 +1,30 @@
 <script>
-    let image1 = "/images/img001.jpg"
-    let image2 = "/images/img002.jpg"
-    let image3  = "/images/img003.jpg"
-    let image4  = "/images/img004.jpg"
+
+    let source = [
+        {link : 'https://source.unsplash.com/random/900x600/?wedding'},
+        {link : 'https://source.unsplash.com/random/900x600/?wedding-moment'},
+        {link : 'https://source.unsplash.com/random/900x600/?wedding-party'},
+        {link : 'https://source.unsplash.com/random/900x600/?wedding-sumba'},
+        {link : 'https://source.unsplash.com/random/900x600/?wedding-gallery'},
+        {link : 'https://source.unsplash.com/random/900x600/?couple-session'},
+        {link : 'https://source.unsplash.com/random/900x600/?prewedding'},
+        {link : 'https://source.unsplash.com/random/900x600/?prewedding-moment'},
+        {link : 'https://source.unsplash.com/random/900x600/?prewedding-gallery'},
+    ]
 </script>
 
 <section>
         <div class="inner">
              <h1 class="title">featured works</h1>
        <div class="works">
+            {#each source as source}
+                
             <div class="work">
-                <a class="image" href="/"><img src="{image4}" alt=""></a>
+                <a class="image" href="/"><img src="{source.link}" alt=""></a>
                 <div class="description">Moyo & Wiwid | Prewedding</div>
             </div>
-            <div class="work">
-                <a class="image" href="/"><img src="{image4}" alt=""></a>
-                <div class="description">Moyo & Wiwid | Prewedding</div>
-            </div>
-            <div class="work">
-                <a class="image" href="/"><img src="{image4}" alt=""></a>
-                <div class="description">Moyo & Wiwid | Prewedding</div>
-            </div>
-            <div class="work">
-                <a class="image" href="/"><img src="{image4}" alt=""></a>
-                <div class="description">Moyo & Wiwid | Prewedding</div>
-            </div>
-            <div class="work">
-                <a class="image" href="/"><img src="{image4}" alt=""></a>
-                <div class="description">Moyo & Wiwid | Prewedding</div>
-            </div>
-            <div class="work">
-                <a class="image" href="/"><img src="{image4}" alt=""></a>
-                <div class="description">Moyo & Wiwid | Prewedding</div>
-            </div>
+            {/each}
+           
         </div>
        </div>
     </section>

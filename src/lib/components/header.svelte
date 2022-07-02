@@ -16,7 +16,7 @@
                     <a href="/about">About</a>
                 </li>
                 <li>
-                    <a href="/">Journal</a>
+                    <a href="/journal">Journal</a>
                 </li>
                 <li>
                     <a href="#contact">Contact</a>
