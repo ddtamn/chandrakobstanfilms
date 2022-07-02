@@ -20,7 +20,7 @@
     let time = 0
     let currentPercent = 0
 
-    let overlayBackground = false
+    
 
 
     function handleNextButton(e) {
@@ -41,7 +41,6 @@
     }
 
     function playVideo(e) {
-        overlayBackground = false
         e.target.closest('.item').querySelector('video').play();
         playButton = false
         pauseButton = true
@@ -60,7 +59,6 @@
     }
 
     function handleEnd() {
-        overlayBackground = image4
         playButton = true
         pauseButton = false
         description = true
@@ -72,7 +70,7 @@
 <section>
    <div class="inner" style="transform: translateX(calc(-{position}% / 5));">
         <div class="item">
-            <div class="overlay {description ? '' : 'hide'}" style="background-image: url({overlayBackground}); opacity: {overlayBackground ? '1' : '0.3'};"></div>
+            <div class="overlay {description ? '' : 'hide'}" style="background-image: url({image4});"></div>
             <video
 		    poster="{image4}"
 		    src="{video1}"
@@ -114,7 +112,7 @@
   }
 
   .inner {
-   height: 100%;
+   height: 100vh;
    width: 500vw;
    display: flex;
    justify-content: flex-start;
@@ -123,7 +121,7 @@
   }
 
   .item {
-    height: 100%;
+    height: 100vh;
     width: 100vw;
     background-position: center center;
     background-repeat: no-repeat;
@@ -137,7 +135,6 @@
     top: 0;
     left: 0;
     background-color: black;
-    opacity: 0.3;
     height: 100%;
     width: 100%;
     transition: all 0.3s ease-in-out;
@@ -245,6 +242,7 @@
 video {
     width: 100%;
     object-fit: cover;
+    height: 100%;
 }
 
   .next {

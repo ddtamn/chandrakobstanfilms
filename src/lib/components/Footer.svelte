@@ -2,7 +2,7 @@
     let year = new Date().getFullYear();
 </script>
 
-<section>
+<section id="contact">
     <div class="inner">
         <div class="contact">
             <div class="title">contact</div>
