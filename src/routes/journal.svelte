@@ -1,21 +1,27 @@
+<script>
+    let activeCategory = 'all'
+
+   
+</script>
+
 <section>
     <div class="jumbotron" style="background-image: url('https://source.unsplash.com/random/900x600/?wedding-moment');">
-        <div class="title">explore our journal</div>
+        <div class="title">explore our works</div>
         <div class="overlay"></div>
     </div>
     <div class="journal" id="j">
         <div class="categories">
             <ul>
-                <li class="active">
+                <li on:click="{() => activeCategory = 'all'}" class="{activeCategory == 'all' ? 'active' : ''}">
                     <a href="/journal#j">All</a>
                 </li>
-                <li>
+                <li on:click="{() => activeCategory = 'wedding'}" class="{activeCategory == 'wedding' ? 'active' : ''}">
                     <a href="/journal?category=wedding#j">Wedding</a>
                 </li>
-                <li>
+                <li on:click="{() => activeCategory = 'prewedding'}" class="{activeCategory == 'prewedding' ? 'active' : ''}">
                     <a href="/journal?category=prewedding#j">Prewedding</a>
                 </li>
-                <li>
+                <li on:click="{() => activeCategory = 'other'}" class="{activeCategory == 'other' ? 'active' : ''}">
                     <a href="/journal?category=other#j">Other</a>
                 </li>
             </ul>

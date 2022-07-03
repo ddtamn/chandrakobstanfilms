@@ -1,5 +1,6 @@
 <script>
     let scrollY;
+    let activePage = 'home'
 </script>
 
 <svelte:window bind:scrollY={scrollY}/>
@@ -9,13 +10,13 @@
         <div class="logo">Chandrakobstan <span>films</span></div>
         <nav>
             <ul>
-                <li class="active">
+                <li on:click="{() => activePage = 'home'}" class="{activePage == 'home' ? 'active' : ''}">
                     <a href="/">Home</a>
                 </li>
-                <li>
+                <li on:click="{() => activePage = 'about'}" class="{activePage == 'about' ? 'active' : ''}">
                     <a href="/about">About</a>
                 </li>
-                <li>
+                <li on:click="{() => activePage = 'journal'}" class="{activePage == 'journal' ? 'active' : ''}">
                     <a href="/journal">Journal</a>
                 </li>
                 <li>
