@@ -1,11 +1,11 @@
 <script>
     let activeCategory = 'all'
-
-   
+    let GOOGLE_DRIVE_EXPORT_LINK = 'http://drive.google.com/uc?export=view&id='
+    let img1 = GOOGLE_DRIVE_EXPORT_LINK + '14Omn4Kmo6kBp0Bc2ZZ3g2ksFWNhWee3U'
 </script>
 
 <section>
-    <div class="jumbotron" style="background-image: url('https://source.unsplash.com/random/900x600/?wedding-moment');">
+    <div class="jumbotron" style="background-image: url({img1});">
         <div class="title">explore our works</div>
         <div class="overlay"></div>
     </div>
@@ -57,7 +57,7 @@
         top: 0;
         left: 0;
         background-color: black;
-        opacity: 0.7;
+        opacity: 0.4;
     }
 
     .title {

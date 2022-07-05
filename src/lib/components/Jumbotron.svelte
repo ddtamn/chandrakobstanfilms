@@ -25,9 +25,6 @@
     let img5 = GOOGLE_DRIVE_EXPORT_LINK + '15J1clJqN1iuM7sLWbCZE7aD4leuUyuS7'
     
 
-    
-
-
     function handleNextButton(e) {
         counter++
         e.target.closest('section').querySelector('video').pause()
