@@ -1,9 +1,4 @@
 <script>
-    let image1 = "/images/img001.jpg"
-    let image2 = "/images/img002.jpg"
-    let image3  = "/images/img003.jpg"
-    let image4  = "/images/img004.jpg"
-    let video1 = "/videos/videos001.mp4"
 
     let position = 0
     let maxPostion = 400
@@ -19,6 +14,16 @@
     let duration;
     let time = 0
     let currentPercent = 0
+
+    let GOOGLE_DRIVE_EXPORT_LINK = 'http://drive.google.com/uc?export=view&id='
+
+    let video = GOOGLE_DRIVE_EXPORT_LINK + '1_jXfGpkG728qmzn0Ve78gc2G35DH5IUQ'
+    let img1 = GOOGLE_DRIVE_EXPORT_LINK + '14Omn4Kmo6kBp0Bc2ZZ3g2ksFWNhWee3U'
+    let img2 = GOOGLE_DRIVE_EXPORT_LINK + '1kcQicagtThmX29F7Fy7sJm5gIp8zUuky'
+    let img3 = GOOGLE_DRIVE_EXPORT_LINK + '18IXzYGeXb7TdbdK2wbEVdVZK4pxzjT9g'
+    let img4 = GOOGLE_DRIVE_EXPORT_LINK + '1dtQnkAnK8AkTJno1WyJAj5HA-TVg8Ato'
+    let img5 = GOOGLE_DRIVE_EXPORT_LINK + '15J1clJqN1iuM7sLWbCZE7aD4leuUyuS7'
+    
 
     
 
@@ -70,10 +75,10 @@
 <section>
    <div class="inner" style="transform: translateX(calc(-{position}% / 5));">
         <div class="item">
-            <div class="overlay {description ? '' : 'hide'}" style="background-image: url({image4});"></div>
+            <div class="overlay {description ? '' : 'hide'}" style="background-image: url({img3});"></div>
             <video
-		    poster="{image4}"
-		    src="{video1}"
+		    poster="{img3}"
+		    src="{video}"
             bind:duration="{duration}"
             bind:currentTime="{time}"
             on:timeupdate="{updateProgress}"
@@ -92,10 +97,10 @@
             <div class="progress" style="width: {currentPercent}%;"></div>
            
         </div>
-        <div class="item" style="background-image: url({image1});"></div>
-        <div class="item" style="background-image: url({image2});"></div>
-        <div class="item" style="background-image: url({image3});"></div>
-        <div class="item" style="background-image: url({image4});"></div>
+        <div class="item" style="background-image: url({img5});"></div>
+        <div class="item" style="background-image: url({img1});"></div>
+        <div class="item" style="background-image: url({img2});"></div>
+        <div class="item" style="background-image: url({img4});"></div>
    </div>
    <div class="prev {position == minPosition ? 'hide' : ''}" on:click="{handlePrevButton}"><i class="fa-solid fa-angle-left"></i></div>
    <div class="next {position == maxPostion ? 'hide' : ''}" on:click={handleNextButton}><i class="fa-solid fa-angle-right"></i></div>
